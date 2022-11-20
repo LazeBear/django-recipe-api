@@ -1,0 +1,6 @@
+lint:
+docker compose run --rm app sh -c "flake8"  
+
+create app
+compose run --rm app sh -c "django-admin startproject app ."
+'.' at the end is to make sure we have this app/app/ structure, instead of app/app/app/
